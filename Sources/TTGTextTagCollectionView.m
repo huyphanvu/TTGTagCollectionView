@@ -641,6 +641,7 @@
 - (TTGTextTagComponentView *)newLabelWithConfig:(TTGTextTag *)config {
     TTGTextTagComponentView *label = [TTGTextTagComponentView new];
     label.config = config;
+    label.label.numberOfLines = self.numberOfLines;
     return label;
 }
 
